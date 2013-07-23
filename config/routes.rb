@@ -6,4 +6,6 @@ NgPhotogur::Application.routes.draw do
   end
   
   root :to => "static#root"
+  match '*anything' => "static#root"
+
 end
